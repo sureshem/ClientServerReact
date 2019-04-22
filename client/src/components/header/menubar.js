@@ -17,7 +17,7 @@ class menubar extends Component {
   render() {
     return (
       <div>
-         <aside className="overlay" onClick={this.props.onClick}></aside>
+         <aside className="overlay"></aside>
         <section className="menulist">
             {/* <Link to="/" className="closeMenu" onClick={this.props.closePopup}></Link> */}
             <Link to="/" className="closeMenu" onClick={this.props.onClick}></Link>
@@ -33,7 +33,7 @@ class menubar extends Component {
             <section className="menulists clearboth">
                 <ul>
                     {this.state.menuitems.map((item,index) => 
-                    <li key={index} className={this.state.activeItem === 'index' ? 'active' : ''} onClick={this.onActivemenu.bind(this)}><NavLink onClick={this.props.onClick} to="/" alt={item} title={item}>{item}</NavLink></li>
+                    <li key={index} className={this.state.activeItem === 'index' ? 'active' : ''} onClick={this.onActivemenu.bind(this)}><NavLink to="/" alt={item} title={item}>{item}</NavLink></li>
                     )}
                 </ul>
             </section>
