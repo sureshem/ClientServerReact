@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import cicon1 from  "../../images/cicon1.png";
 import { Link, NavLink } from "react-router-dom";
+
 class menubar extends Component {
     constructor(props){
         super(props);
@@ -24,11 +25,11 @@ class menubar extends Component {
             <section className="langCounty clearboth">
                 <ul className="langCntry">
                     <li><Link to="/"><img src={cicon1} alt="" /></Link></li>
-                    <li><Link to="/">IN</Link></li>
+                    <li><Link to="/innerpages/page1" onClick={this.props.onClick}>IN</Link></li>
                 </ul>
             </section>
             <section className="signinout clearboth">
-                <p><Link to="/">Register</Link><span>/</span><Link to="/">Login</Link></p>
+                <p><Link to="/">Register</Link><span>/</span><Link to="/innerpages/page2" onClick={this.props.onClick}>Login</Link></p>
             </section>
             <section className="menulists clearboth">
                 <ul>

@@ -1,0 +1,67 @@
+.mainpopup{}
+.overly{position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.8); z-index: 99999;}
+.mainpopup .popupInner{position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%);margin:0 auto;z-index: 99999;max-width: 600px; width: 100%;}
+.mainpopup .popupInner .innerElements{padding:20px;background-color: #F7F7F7; margin: 0 auto; border-radius: 10px; box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3); overflow: hidden;}
+.mainpopup .popupInner .innerElements span.clos{cursor:pointer;position: absolute; top:20px; right:20px; z-index: 999;width: 28px; height: 22px;transition: all .3s ease;}
+.mainpopup .popupInner .innerElements span.clos:before{position: absolute; left: 15px; content: ' '; width: 1px; background-color:#939090;transform: rotate(45deg);}
+.mainpopup .popupInner .innerElements span.clos:before, .mainpopup .popupInner .innerElements span.clos:after{height: 28px;top: -4px;}
+.mainpopup .popupInner .innerElements span.clos:after{position: absolute; left: 15px; content: ' '; width: 1px; background-color:#939090;transform: rotate(-45deg);}
+.mainpopup .popupInner .innerElements span.clos:hover {transform: rotate(25deg); }
+.mainpopup .popupInner .innerElements .innerThumb figure {width:40%;padding-right:25px;}
+.mainpopup .popupInner .innerElements .innerThumb{display:table;width:100%;}
+.mainpopup .popupInner .innerElements .innerThumb figure, .mainpopup .popupInner .innerElements .innerThumb .detailsBlock{display:table-cell;vertical-align:middle;text-align:center;}
+.mainpopup .popupInner .innerElements .innerThumb .detailsBlock p{text-align: center;font-size:20px;font-weight: 600;padding:0 0 5px;}
+.mainpopup .popupInner .innerElements .innerThumb .detailsBlock p span:first-child{font-weight:normal;font-family:'hindlight'}
+.mainpopup .popupInner .innerElements .innerThumb .detailsBlock p span{display:block;padding:5px 0; }
+.mainpopup .popupInner .innerElements .innerThumb .detailsBlock p span > span{font-weight:bold !important;color:#55a1ed;}
+.mainpopup .popupInner .innerElements .innerThumb .detailsBlock button.reset{margin:0 10px 0 0;}
+.mainpopup .popupInner .innerElements .innerThumb .detailsBlock ul.horizandalRadio{text-align:left;margin-right: -10px;margin-left: -10px;}
+.mainpopup .popupInner .innerElements .innerThumb .detailsBlock ul.horizandalRadio li{display:inline-block;padding:0 10px;}
+.mainpopup .popupInner .innerElements .innerThumb .detailsBlock ul.horizandalRadio li .radio{margin:0 0 10px;}
+.giftCard .innerThumb figure{vertical-align:top !important}
+.giftCard .giftCardIcon p{padding:0 0 30px;position:relative;}
+.giftCard .giftCardIcon p:after{content: ''; position: absolute; bottom:18px; left: 50%;transform:translateX(-50%); background: #f7d402; background: -webkit-linear-gradient(top, #f7d402 0%,#f6e01f 100%); background: -webkit-gradient(linear, left top, left bottom, from(#f7d402),to(#f6e01f)); background: -o-linear-gradient(top, #f7d402 0%,#f6e01f 100%); background: linear-gradient(to bottom, #f7d402 0%,#f6e01f 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7d402', endColorstr='#f6e01f',GradientType=0 ); height: 2px; width: 45px;}
+.giftCard .giftCardIcon p span {color: #1e1e1e;font-size:20px;text-decoration:none;}
+.giftCard .giftCardIcon p span i{color: #ed1c24; font-size: 32px;}
+.magDetails .pricing  .innerThumb h3{padding:0 0 10px;}
+.magDetails .pricing  .innerThumb h3 span:first-child{font-size:16px;line-height:20px;font-weight:600}
+.magDetails .pricing  .innerThumb h3 span{font-size: 16px;}
+.magDetails .pricing  .innerThumb h4{padding:10px 0 0;}
+.magDetails .pricing  .innerThumb h4 span:first-child{font-size: 16px; line-height:18px; font-weight: bold;} 
+.magDetails .pricing .innerThumb h4 span {font-size: 16px;}
+.magDetails .pricing  .innerThumb  .radio input[type=radio]+.radio-label:before{margin-right: 10px}
+@media(max-width:1199px){
+	.giftCard .giftCardIcon p{padding:0 0 15px;}
+	.mainpopup .popupInner .innerElements .innerThumb .detailsBlock ul.horizandalRadio li{padding:0 9px;margin:0 0 10px;}
+	.mainpopup .popupInner .innerElements .innerThumb figure{display:none !important;}
+	.giftCard .giftCardIcon p:after{bottom:5px;}
+	.mainpopup .popupInner .innerElements{padding:15px;}
+	.mainpopup .popupInner{max-width:60%;}
+	.mainpopup .popupInner .innerElements .innerThumb figure, .mainpopup .popupInner .innerElements .innerThumb .detailsBlock{display:block;width:100%;    text-align: center;padding:0;}
+	.mainpopup .popupInner .innerElements .innerThumb .detailsBlock{margin:15px 0 0;}
+}
+@media(max-width:767px){
+	.mainpopup .popupInner .innerElements .innerThumb .detailsBlock ul.horizandalRadio{margin:0;}
+	.mainpopup .popupInner{max-width:90%}
+	.mainpopup .popupInner .innerElements .innerThumb .detailsBlock ul.form-list li{width:47%;margin:0 5px 10px;display:inline-block;}
+	.mainpopup .popupInner .innerElements .innerThumb .detailsBlock ul.horizandalRadio li, .mainpopup .popupInner .innerElements .innerThumb .detailsBlock ul.horizandalRadio li .radio{margin:0;}
+	.mainpopup .popupInner .innerElements .innerThumb .detailsBlock ul.horizandalRadio li{}
+}
+@media(max-width:639px){
+	.giftCard .giftCardIcon{display:none;}
+	.giftCard button.cehckout{margin:10px auto 0;}
+}
+@media(max-width:479px){
+	.giftCard .giftCardIcon p:after {bottom: -5px;}
+	.giftCard .giftCardIcon p {padding: 0;}
+	.giftCard .giftCardIcon p span i{font-size:22px;}
+	.giftCard .giftCardIcon p span{font-size:16px;}
+	.mainpopup .popupInner .innerElements .innerThumb .detailsBlock ul.form-list li{width:100%;margin: 0 0 5px;}
+	.mainpopup .popupInner .innerElements .innerThumb .detailsBlock ul.horizandalRadio{display: inline-block;width: 100%;}
+	.mainpopup .popupInner .innerElements .innerThumb .detailsBlock ul.horizandalRadio li{padding:0;margin:0 0 8px;display: block;}
+	.mainpopup .popupInner .innerElements .innerThumb .detailsBlock ul.horizandalRadio li:last-child{margin:0;}
+	.mainpopup .popupInner .innerElements .innerThumb .detailsBlock p{font-size:17px;}
+	.mainpopup .popupInner .innerElements .innerThumb figure img {width:110px;}
+	.mainpopup .popupInner .innerElements .innerThumb .detailsBlock button.reset{margin:0 0 10px;}
+	.mainpopup .popupInner .innerElements .innerThumb .detailsBlock button.bluebutton{max-width:100%}
+}
